@@ -1,18 +1,17 @@
 ---
 layout: post
 title: JHtC4BSK barsa
-categories:
-- random
-- crypto
+category: random
+tags: [random, crypto, jhtc]
 ---
 
 Crypto ctf challenge for JHtC team.
 
-![barsa main page]({{ "/assets/posts/2017-10-20-jhtc4bsk-barsa/barsa1.png" | absolute_url }})
+![barsa main page]({{ "/assets/posts/2017-10-20-jhtc4bsk-barsa/barsa1.png" }})
 
 The page have two standard functionalities: user registration and logging in. After playing with them for a while we can see that authentication is based on "auth" cookie, which contains two long numbers separated by dash. Next thing to check is html source.
 
-![barsa html code]({{ "/assets/posts/2017-10-20-jhtc4bsk-barsa/barsa2.png" | absolute_url }})
+![barsa html code]({{ "/assets/posts/2017-10-20-jhtc4bsk-barsa/barsa2.png" }})
 
 After not looking at robots.txt, we do not get encrypted zip file with challenge's source code.
 
