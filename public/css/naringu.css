@@ -149,8 +149,8 @@ pre {
 code {
   padding: .25em .5em;
   font-size: 85%;
-  color: #000;
-  background-color: #9a1303;;
+  font-family: fantasy, serif, Times;
+  background-color: #111;;
   border-radius: 3px;
 }
 pre {
