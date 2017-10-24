@@ -5,12 +5,12 @@
 <!-- Toggleable sidebar -->
 <div class="sidebar" id="sidebar">
   <div class="sidebar-item pp">
-      <img width="125" height="125" alt="+" src="{{ site.baseurl }}/images/pp.jpg">
+      <img width="125" height="125" alt="+" src="{{ "/images/pp.jpg" | prepend: site.baseurl }}">
     <p>{{ site.description }}</p>
   </div>
 
   <nav class="sidebar-nav">
-    <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="/">Home</a>
+    <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ "/" | prepend: site.baseurl }}">Home</a>
 
     {% comment %}
       The code below dynamically generates a sidebar nav of pages with
