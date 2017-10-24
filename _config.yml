@@ -15,7 +15,7 @@ title:               Gros
 tagline:             ''
 description:         ''
 url:                 https://grosquildu.github.io/
-baseurl:             "/"
+baseurl:             /
 paginate:            7
 
 # About/contact
