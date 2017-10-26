@@ -16,3 +16,10 @@ a.sidebar-nav-item:hover,
 a.sidebar-nav-item:focus {
   background-color: rgba(255, 255, 255, 0.7);
 }
+
+.masthead-title a {
+  color: #222;
+}
+.masthead .container {
+  background-image: url(/images/splash_hb.png);
+}
