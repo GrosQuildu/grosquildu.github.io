@@ -259,8 +259,8 @@ tbody tr:nth-child(odd) th {
  * regular page content.
  */
 
-.wrap {
-  background-image: url(/images/hb.jpg);
+#wrap {
+  background-image: url(/images/sr.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center; 
@@ -276,7 +276,7 @@ tbody tr:nth-child(odd) th {
  */
 
 .container {
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.95);
   max-width: 55rem;
   padding-left:  1rem;
   padding-right: 1rem;
@@ -359,7 +359,6 @@ tbody tr:nth-child(odd) th {
   font-size: .875rem; /* 15px */
   color: rgba(255,255,255,.6);
   border: 1px solid #fff;
-  background-color: rgba(255, 255, 255, .7);
   -webkit-transition: all .3s ease-in-out;
           transition: all .3s ease-in-out;
 }
@@ -481,14 +480,14 @@ a.sidebar-nav-item:focus {
  * Read more about it at http://meyerweb.com/eric/thoughts/2011/09/12/.
  */
 
-.wrap,
+#wrap,
 .sidebar,
 .sidebar-toggle {
   -webkit-backface-visibility: hidden;
       -ms-backface-visibility: hidden;
           backface-visibility: hidden;
 }
-.wrap,
+#wrap,
 .sidebar-toggle {
   -webkit-transition: -webkit-transform .3s ease-in-out;
           transition: transform .3s ease-in-out;
@@ -499,7 +498,7 @@ a.sidebar-nav-item:focus {
   visibility: visible;
 }
 #sidebar-checkbox:checked ~ .sidebar,
-#sidebar-checkbox:checked ~ .wrap,
+#sidebar-checkbox:checked ~ #wrap,
 #sidebar-checkbox:checked ~ .sidebar-toggle {
   -webkit-transform: translateX(14rem);
       -ms-transform: translateX(14rem);
@@ -683,7 +682,7 @@ a.pagination-item:hover {
 }
 
 .layout-reverse #sidebar-checkbox:checked ~ .sidebar,
-.layout-reverse #sidebar-checkbox:checked ~ .wrap,
+.layout-reverse #sidebar-checkbox:checked ~ #wrap,
 .layout-reverse #sidebar-checkbox:checked ~ .sidebar-toggle {
   -webkit-transform: translateX(-14rem);
       -ms-transform: translateX(-14rem);

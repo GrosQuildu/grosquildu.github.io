@@ -1,0 +1,18 @@
+#wrap {
+  background-image: url(/images/hb.jpg);
+}
+
+.sidebar {
+  color: rgba(0, 0, 0, .9);
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.sidebar a {
+  color: #000;
+}
+
+.sidebar-nav-item.active,
+a.sidebar-nav-item:hover,
+a.sidebar-nav-item:focus {
+  background-color: rgba(255, 255, 255, 0.7);
+}
