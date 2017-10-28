@@ -284,6 +284,9 @@ tbody tr:nth-child(odd) th {
   margin-right: auto;
   padding-bottom: 30px;
 }
+.container.content {
+  padding-top: 10px;
+}
 @media (min-width: 55em) {
   .container {
     max-width: 55rem;
@@ -554,6 +557,7 @@ a.sidebar-nav-item:focus {
 .page,
 .post {
   margin-bottom: 1em;
+  min-height: 400px;
 }
 
 /* Blog post or page title */
@@ -711,4 +715,40 @@ a.pagination-item:hover {
   padding-top: 10px;
   padding-bottom: 10px; 
   border-top: 1px solid #9a1303;
+}
+
+/*
+Boxes
+*/
+.boxes {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.box {
+  display: inline-block;
+  -webkit-box-shadow: inset 0px 0px 23px 13px rgba(255,255,255,.4);
+  -moz-box-shadow: inset 0px 0px 23px 13px rgba(255,255,255,.4);
+  box-shadow: inset 0px 0px 23px 13px rgba(255,255,255,.4);
+  border-radius: 23px/10px;
+  border: 2px solid #fff;
+  background-color: #020202;
+  height: 100px;
+  min-width: 400px;
+  padding: 10px;
+  padding-left: 20px;
+  margin-top: 10px;
+  transition: box-shadow 0.5s ease;
+}
+
+.box:hover {
+  -webkit-box-shadow: inset 0px 0px 23px 13px rgba(154,8,3,.4);
+  -moz-box-shadow: inset 0px 0px 23px 13px rgba(154,8,3,.4);
+  box-shadow: inset 0px 0px 23px 13px rgba(154,8,3,.4);
+}
+
+.box .title {
+  color: #ddd;
+  font-size: 20px;
+  font-weight: bold;
 }
