@@ -375,6 +375,7 @@ tbody tr:nth-child(odd) th {
   border: 1px solid #fff;
   -webkit-transition: all .3s ease-in-out;
           transition: all .3s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.95);
 }
 @media (min-width: 30em) {
   .sidebar {
@@ -512,7 +513,6 @@ a.sidebar-nav-item:focus {
   visibility: visible;
 }
 #sidebar-checkbox:checked ~ .sidebar,
-#sidebar-checkbox:checked ~ #wrap,
 #sidebar-checkbox:checked ~ .sidebar-toggle {
   -webkit-transform: translateX(14rem);
       -ms-transform: translateX(14rem);
