@@ -144,12 +144,11 @@ abbr[title] {
 
 code,
 pre {
-  font-family: Menlo, Monaco, "Courier New", monospace;
+  font-family: "Courier New", monospace;
 }
 code {
   padding: .25em .5em;
   font-size: 85%;
-  font-family: fantasy, serif, Times;
   background-color: #111;;
   border-radius: 3px;
 }
@@ -723,6 +722,7 @@ Boxes
 .boxes {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .box {
