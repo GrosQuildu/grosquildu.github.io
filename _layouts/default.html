@@ -7,19 +7,17 @@
 
     {% include sidebar.html %}
 
-    <div id="wrap">
-      <div class="masthead">
-        <div class="container">
-          <h3 class="masthead-title">
-            <a href="/" title="Home">{{ site.title }}</a>
-            <small>{{ site.tagline }}</small>
-          </h3>
-        </div>
+    <div class="masthead">
+      <div class="container">
+        <h3 class="masthead-title">
+          <a href="/" title="Home">{{ site.title }}</a>
+          <small>{{ site.tagline }}</small>
+        </h3>
       </div>
+    </div>
 
-      <div class="container content">
-        {{ content }}
-      </div>
+    <div class="container content">
+      {{ content }}
     </div>
 
     <label for="sidebar-checkbox" class="sidebar-toggle"></label>
@@ -29,17 +27,14 @@
         var sidebar = document.querySelector('#sidebar');
         var checkbox = document.querySelector('#sidebar-checkbox');
 
-        document.addEventListener('click', function(e) {
-          var target = e.target;
-
-          if(!checkbox.checked ||
-             sidebar.contains(target) ||
-             (target === checkbox || target === toggle)) return;
-
-          checkbox.checked = false;
+        checkbox.addEventListener('click', function(e) {
+          if(checkbox.checked) {
+            sidebar.style.visibility = 'hidden';
+          } else {
+            sidebar.style.visibility = 'visible';
+          }
         }, false);
       })(document);
-      document.querySelector('#sidebar-checkbox').click();
     </script>
 
 {% include footer.html %}

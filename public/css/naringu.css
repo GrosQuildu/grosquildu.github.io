@@ -33,7 +33,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  border: 1px solid #9a1303;
+  border: 1px solid #d09a31;
   overflow-x: hidden;
 }
 
@@ -50,14 +50,14 @@ html {
 
 body {
   color: #d8d9d9;
-  background-color: #030303;
+  background-color: #000;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
 
 /* No `:visited` state is required by default (browsers will use `a`) */
 a {
-  color: #9a1303;
+  color: #000;
   text-decoration: none;
 }
 a strong {
@@ -67,13 +67,14 @@ a strong {
 /* `:focus` is linked to `:hover` for basic accessibility */
 a:hover,
 a:focus {
-  text-decoration: underline;
+  text-decoration: none;
+  color: #d09a31;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
   font-weight: 400;
-  color: #9a1303;
+  color: #d09a31;
   letter-spacing: -.025rem;
 } 
 
@@ -100,7 +101,7 @@ p {
 }
 
 strong {
-  color: #9a1303;
+  color: #d09a31;
 }
 
 
@@ -122,19 +123,19 @@ hr {
   position: relative;
   margin: 1.5rem 0;
   border: 0;
-  border-top: 1px solid #9a1303;
-  border-bottom: 1px solid #9a1303;
+  border-top: 1px solid #d09a31;
+  border-bottom: 1px solid #d09a31;
 }
 
 abbr {
   font-size: 85%;
   font-weight: bold;
-  color: #9a1303;
+  color: #d09a31;
   text-transform: uppercase;
 }
 abbr[title] {
   cursor: help;
-  border-bottom: 1px dotted #9a1303;
+  border-bottom: 1px dotted #d09a31;
 }
 
 /* 
@@ -148,8 +149,8 @@ pre {
 }
 code {
   padding: .25em .5em;
-  font-size: 85%;
-  background-color: #111;;
+  font-size: 90%;
+  background-color: #eee;
   border-radius: 3px;
 }
 pre {
@@ -163,8 +164,8 @@ pre {
   white-space: pre-wrap;
   word-break: break-all;
   word-wrap: break-word;
-  background-color: #000;
-  border: 1px solid #9a1303;
+  background-color: #fff;
+  border: 1px solid #d09a31;
 }
 pre code {
   padding: 0;
@@ -177,11 +178,11 @@ pre code {
 .highlight {
   margin-bottom: 1rem;
   border-radius: 4px;
-  background-color: #9a1303;
+  background-color: #d09a31;
 }
 .highlight pre {
   margin-bottom: 0;
-  background-color: #000; 
+  background-color: #fff; 
 }
 
 /* Gist via GitHub Pages */
@@ -237,13 +238,13 @@ img {
 table {
   margin-bottom: 1rem;
   width: 100%;
-  border: 1px solid #9a1303;
+  border: 1px solid #d09a31;
   border-collapse: collapse;
 }
 td,
 th {
   padding: .25rem .5rem;
-  border: 1px solid #9a1303;
+  border: 1px solid #d09a31;
 }
 tbody tr:nth-child(odd) td,
 tbody tr:nth-child(odd) th {
@@ -258,7 +259,7 @@ tbody tr:nth-child(odd) th {
  * regular page content.
  */
 
-#wrap {
+/*#wrap {
   background-image: url(/images/sr.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -266,7 +267,7 @@ tbody tr:nth-child(odd) th {
   position: relative;
   width: 100%;
   min-height: 1000px;
-}
+}*/
 
 /*
  * Container
@@ -275,8 +276,8 @@ tbody tr:nth-child(odd) th {
  */
 
 .container {
-  background-color: rgba(0, 0, 0, 0.95);
-  max-width: 55rem;
+  background-color: #000;
+  max-width: 45rem;
   padding-left:  1rem;
   padding-right: 1rem;
   margin-left:  auto;
@@ -288,12 +289,12 @@ tbody tr:nth-child(odd) th {
 }
 @media (min-width: 55em) {
   .container {
-    max-width: 55rem;
+    max-width: 45rem;
   }
 }
 @media (min-width: 50em) {
   .container {
-    max-width: 55rem;
+    max-width: 45rem;
   }
 }
 
@@ -307,7 +308,7 @@ tbody tr:nth-child(odd) th {
   padding-top:    1rem;
   padding-bottom: 1rem;
   margin-bottom: 3rem;
-  border-bottom: 1px solid #9a1303;
+  border-bottom: 1px solid #d09a31;
 }
 .masthead-title {
   margin-top: 0;
@@ -315,7 +316,7 @@ tbody tr:nth-child(odd) th {
   color: #505050;
 }
 .masthead-title a {
-  color: #ddd;
+  color: #000;
   margin-top: 100px;
   font-size: 20px;
   font-weight: bold;
@@ -330,7 +331,7 @@ tbody tr:nth-child(odd) th {
   letter-spacing: 0;
 }
 .masthead .container {
-  background-image: url(/images/splash.png);
+  background-image: url(/images/splash_hb.png);
   background-repeat: no-repeat;
   background-color: initial;
   background-size: 900px 60px;
@@ -365,16 +366,12 @@ tbody tr:nth-child(odd) th {
   position: fixed;
   top: 0;
   bottom: 0;
-  left: -14rem;
   width: 14rem;
-  visibility: hidden;
   overflow-y: auto;
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
   font-size: .875rem; /* 15px */
   color: rgba(255,255,255,.6);
   border: 1px solid #fff;
-  -webkit-transition: all .3s ease-in-out;
-          transition: all .3s ease-in-out;
   background-color: rgba(0, 0, 0, 0.95);
 }
 @media (min-width: 30em) {
@@ -444,7 +441,7 @@ a.sidebar-nav-item:focus {
   display: block;
   width: 2.2rem;
   padding: .5rem .65rem;
-  color: #9a1303;
+  color: #d09a31;
   background-color: #000;
   border-radius: 4px;
   cursor: pointer;
@@ -465,7 +462,7 @@ a.sidebar-nav-item:focus {
 
 .sidebar-toggle:active,
 #sidebar-checkbox:checked ~ .sidebar-toggle {
-  color: #9a1303;
+  color: #d09a31;
   background-color: #505050;
 }
 
@@ -479,44 +476,6 @@ a.sidebar-nav-item:focus {
     border-top-width: .45rem;
     border-bottom-width: .15rem;
   }
-}
-
-
-/* Slide effect
- *
- * Handle the sliding effects of the sidebar and content in one spot, seperate
- * from the default styles.
- *
- * As an a heads up, we don't use `transform: translate3d()` here because when
- * mixed with `position: fixed;` for the sidebar toggle, it creates a new
- * containing block. Put simply, the fixed sidebar toggle behaves like
- * `position: absolute;` when transformed.
- *
- * Read more about it at http://meyerweb.com/eric/thoughts/2011/09/12/.
- */
-
-#wrap,
-.sidebar,
-.sidebar-toggle {
-  -webkit-backface-visibility: hidden;
-      -ms-backface-visibility: hidden;
-          backface-visibility: hidden;
-}
-#wrap,
-.sidebar-toggle {
-  -webkit-transition: -webkit-transform .3s ease-in-out;
-          transition: transform .3s ease-in-out;
-}
-
-#sidebar-checkbox:checked + .sidebar {
-  z-index: 10;
-  visibility: visible;
-}
-#sidebar-checkbox:checked ~ .sidebar,
-#sidebar-checkbox:checked ~ .sidebar-toggle {
-  -webkit-transform: translateX(14rem);
-      -ms-transform: translateX(14rem);
-          transform: translateX(14rem);
 }
 
 
@@ -543,7 +502,7 @@ a.sidebar-nav-item:focus {
   margin-bottom: 1rem;
   padding: 1rem;
   color: #000;
-  background-color: #9a1303;
+  background-color: #d09a31;
 }
 
 /*
@@ -556,14 +515,23 @@ a.sidebar-nav-item:focus {
 .page,
 .post {
   margin-bottom: 1em;
-  min-height: 400px;
+  background-color: #fff;
+  color: #000;
+  padding: 20px;
+  font-family: monospace, sans-serif;
+  font-size: 14px;
+  border: 1px solid #000;
+  outline: 1px solid #aaa;
 }
 
 /* Blog post or page title */
 .page-title,
 .post-title,
 .post-title a {
-  color: #9a1303;
+  color: #000;
+}
+.post-title a:hover {
+  color: #d09a31;
 }
 .page-title,
 .post-title {
@@ -586,8 +554,8 @@ a.sidebar-nav-item:focus {
 .related {
   /*padding-top: 2rem;*/
   /*padding-bottom: 2rem;*/
-  border-top: 1px solid #9a1303;
-  /*border-bottom: 1px solid #9a1303;*/
+  border-top: 1px solid #d09a31;
+  /*border-bottom: 1px solid #d09a31;*/
 }
 .related-posts {
   padding-left: 0;
@@ -630,7 +598,7 @@ a.sidebar-nav-item:focus {
 .pagination-item {
   display: block;
   padding: 1rem;
-  border: 1px solid #9a1303;
+  border: 1px solid #d09a31;
 }
 .pagination-item:first-child {
   margin-bottom: -1px;
@@ -666,17 +634,17 @@ a.pagination-item:hover {
  *
  * Default dark theme of Naringu is here (Will Update)
 
-/* #9a1303 */
+/* #d09a31 */
 
-.theme-9a1303 .sidebar,
-.theme-9a1303 .sidebar-toggle:active,
-.theme-9a1303 #sidebar-checkbox:checked ~ .sidebar-toggle {
+.theme-d09a31 .sidebar,
+.theme-d09a31 .sidebar-toggle:active,
+.theme-d09a31 #sidebar-checkbox:checked ~ .sidebar-toggle {
   background-color: #000;
 }
-.theme-9a1303 .container a,
-.theme-9a1303 .sidebar-toggle,
-.theme-9a1303 .related-posts li a:hover {
-  color: #9a1303;
+.theme-d09a31 .container a,
+.theme-d09a31 .sidebar-toggle,
+.theme-d09a31 .related-posts li a:hover {
+  color: #d09a31;
 }
 
 
@@ -713,7 +681,7 @@ a.pagination-item:hover {
 .footer {
   padding-top: 10px;
   padding-bottom: 10px; 
-  border-top: 1px solid #9a1303;
+  border-top: 1px solid #d09a31;
 }
 
 /*
@@ -731,8 +699,8 @@ Boxes
   -moz-box-shadow: inset 0px 0px 23px 13px rgba(255,255,255,.4);
   box-shadow: inset 0px 0px 23px 13px rgba(255,255,255,.4);
   border-radius: 23px/10px;
-  border: 2px solid #fff;
-  background-color: #020202;
+  border: 2px solid #333;
+  background-color: #fff;
   height: 100px;
   min-width: 400px;
   padding: 10px;
@@ -742,13 +710,13 @@ Boxes
 }
 
 .box:hover {
-  -webkit-box-shadow: inset 0px 0px 23px 13px rgba(154,8,3,.4);
-  -moz-box-shadow: inset 0px 0px 23px 13px rgba(154,8,3,.4);
-  box-shadow: inset 0px 0px 23px 13px rgba(154,8,3,.4);
+  -webkit-box-shadow: inset 0px 0px 23px 13px rgba(208,154,49,.9);
+  -moz-box-shadow: inset 0px 0px 23px 13px rgba(208,154,49,.9);
+  box-shadow: inset 0px 0px 23px 13px rgba(208,154,49,.9);
 }
 
 .box .title {
-  color: #ddd;
+  color: #000;
   font-size: 20px;
   font-weight: bold;
 }

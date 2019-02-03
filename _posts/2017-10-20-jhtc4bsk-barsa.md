@@ -1,8 +1,8 @@
 ---
 layout: post
 title: JHtC4BSK barsa
-category: random
-tags: [random, crypto, jhtc]
+category: writeups
+tags: [writeup, crypto, jhtc]
 ---
 
 Crypto ctf challenge for JHtC team.
