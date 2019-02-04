@@ -76,7 +76,7 @@ print f_.factor()
 # x^3 -> cusp
 ```
 
-For cups the map is:
+For cusp the map is:
 \begin{equation}
 E(\mathbb{F}_p) \mapsto \mathbb{F}_p^{+}, \quad (x,y) \mapsto \frac{x}{y}, \quad \infty \mapsto 0
 \end{equation}
