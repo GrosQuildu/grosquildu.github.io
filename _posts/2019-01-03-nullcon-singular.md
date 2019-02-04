@@ -117,3 +117,5 @@ K = sha256('165140565353247266256196454126511228757085857653').digest()
 print(AES.new(K, AES.MODE_ECB).decrypt(flag_enc))
 # hackim19{w0ah_math_i5_quite_fun_a57f8e21}
 ```
+
+Note that there was similar challenge on [hxp ctf 2018](https://ctftime.org/event/647) with curve being node (task "curve12833227").
