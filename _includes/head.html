@@ -23,4 +23,9 @@
   <!-- Icons -->
   <link rel="shortcut icon" href="{{ "public/favicon.ico" | prepend: site.baseurl }}">
 
+  <!-- MathJax -->
+  {% if page.use_math %}
+    {% include mathjax.html %}
+  {% endif %}
+
   </head>
