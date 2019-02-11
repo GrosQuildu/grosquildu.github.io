@@ -40,7 +40,7 @@ body {
 html {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px;
-  line-height: 1.5;
+  /*line-height: 1.5;*/
 }
 @media (min-width: 38em) {
   html {
@@ -148,8 +148,8 @@ pre {
   font-family: "Courier New", monospace;
 }
 code {
-  padding: .25em .5em;
-  font-size: 90%;
+  /*padding: .25em .5em;*/
+  /*font-size: 90%;*/
   background-color: #eee;
   border-radius: 3px;
 }
@@ -159,7 +159,7 @@ pre {
   margin-bottom: 1rem;
   padding: 1rem;
   font-size: .8rem;
-  line-height: 1.4;
+  /*line-height: 1.4;*/
   white-space: pre;
   white-space: pre-wrap;
   word-break: break-all;
@@ -179,6 +179,8 @@ pre code {
   margin-bottom: 1rem;
   border-radius: 4px;
   background-color: #d09a31;
+  white-space: pre;
+  overflow-x: auto;
 }
 .highlight pre {
   margin-bottom: 0;
@@ -198,7 +200,7 @@ pre code {
 }
 .gist .gist-file .gist-data {
   font-size: .8rem !important;
-  line-height: 1.4;
+  /*line-height: 1.4;*/
 }
 .gist code {
   padding: 0;
@@ -277,9 +279,9 @@ tbody tr:nth-child(odd) th {
 
 .container {
   background-color: #000;
-  max-width: 45rem;
-  padding-left:  1rem;
-  padding-right: 1rem;
+  width: 687px;
+  padding-left:  0;
+  padding-right: 0;
   margin-left:  auto;
   margin-right: auto;
   padding-bottom: 30px;
@@ -287,7 +289,7 @@ tbody tr:nth-child(odd) th {
 .container.content {
   padding-top: 10px;
 }
-@media (min-width: 55em) {
+/*@media (min-width: 55em) {
   .container {
     max-width: 45rem;
   }
@@ -296,7 +298,7 @@ tbody tr:nth-child(odd) th {
   .container {
     max-width: 45rem;
   }
-}
+}*/
 
 /*
  * Masthead
@@ -519,7 +521,7 @@ a.sidebar-nav-item:focus {
   color: #000;
   padding: 20px;
   font-family: monospace, sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   border: 1px solid #000;
   outline: 1px solid #aaa;
 }
