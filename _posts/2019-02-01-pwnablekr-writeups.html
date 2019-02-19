@@ -1,0 +1,15 @@
+---
+layout: post
+title: pwnable.kr writeups
+category: writeups
+tags: [pwn, writeup, wargame]
+---
+
+<p>Writeups for <a href="https://pwnable.kr">pwnable.kr</a></p>
+
+<p>
+Rookiess:<br/>
+{% for writeup in site.pwnablekr %}
+    <a href="{{writeup.url}}">  - {{ writeup.title | split:"-" | slice: 1}}</a><br/>
+{% endfor %}
+</p>
