@@ -7,6 +7,8 @@ tags: [writeup, crypto, jhtc]
 
 Crypto ctf challenge for JHtC team.
 
+[Source code]({{ "/assets/posts/2017-10-20-jhtc4bsk-barsa/barsa_source.zip" }})
+
 ![barsa main page]({{ "/assets/posts/2017-10-20-jhtc4bsk-barsa/barsa1.png" }})
 
 The page have two standard functionalities: user registration and logging in. After playing with them for a while we can see that authentication is based on "auth" cookie, which contains two long numbers separated by dash. Next thing to check is html source.
