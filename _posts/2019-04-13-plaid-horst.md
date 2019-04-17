@@ -8,6 +8,8 @@ use_math: true
 
 tldr; Feistel network with constant round key + permutations
 
+Solved with my teammate Tacet.
+
 Description:
 ```
 They say 3 rounds is provably secure, right?
