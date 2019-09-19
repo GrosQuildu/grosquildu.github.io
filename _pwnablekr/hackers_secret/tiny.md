@@ -36,7 +36,9 @@ There are two tricks we may use:
 
 The ulimit is a system command to check and set user limits. In older systems setting stack limit to "unlimited" resulted in stabilization of addresses (stack, vdso and other memory pages were allocated at constant addresses). That effectively means ASLR bypass.
 
-Once we have bypassed ASLR, we may use code from vdso section.
+Note that currently pwnable.kr system is patched, so the trick with ulimit won't work. Binary may be exploited the same way as `tiny_hard` however.
+
+Assuming the system is old, the ASLR is bypassed and we may use code from vdso section.
 
 At `__vdso_clock_gettime+88` there are some popping gadgets:
 ```
