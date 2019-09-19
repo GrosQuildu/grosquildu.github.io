@@ -1,8 +1,9 @@
 ---
 layout: page
 title: pwnable.kr - echo2
+file_path: echo2
 category: pwnablekr
-subcategory: rookiess
+subcategory: rookiss
 tags: [writeup, pwn, pwnablekr]
 ---
 

@@ -1,6 +1,7 @@
 ---
 layout: page
 title: pwnable.kr - nuclear
+file_path: nuclear
 category: pwnablekr
 subcategory: hackers_secret
 tags: [writeup, pwn, pwnablekr]

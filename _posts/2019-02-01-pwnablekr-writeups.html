@@ -7,23 +7,19 @@ tags: [pwn, writeup, wargame]
 
 <p>Writeups for <a href="https://pwnable.kr">pwnable.kr</a></p>
 
-<p>Only overwiew of the tasks are provided publicly. <br/>
+<p>Only overwiew of the tasks are publicly available. <br/>
 
 Full writeups and exploits are in <a href="/assets/pwnablekr/cipher/">encrypted tars</a>.
 Flags are passwords. <br/>
 </p>
 
 <p>
-Please remove space (%20) from encrypted solutions urls.
-</p>
-
-<p>
 Rookiess:<br/>
 {% for writeup in site.pwnablekr %}
-    {% if writeup.subcategory == "rookiess" %}
+    {% if writeup.subcategory == "rookiss" %}
     {% assign task_name = writeup.title | split:"-" | slice: 1 %}
     <a href="{{writeup.url}}">  - {{task_name}}</a>
-    (<a href="/assets/pwnablekr/cipher/rookiess/{{-task_name-}}.tar.gz.gpg">solution</a>)<br/>
+    (<a href="/assets/pwnablekr/cipher/rookiss/{{ writeup.file_path }}.tar.gz.gpg">solution</a>)<br/>
     {% endif %}
 {% endfor %}
 </p>
@@ -32,7 +28,9 @@ Rookiess:<br/>
 Hacker's secret:<br/>
 {% for writeup in site.pwnablekr %}
     {% if writeup.subcategory == "hackers_secret" %}
-    <a href="{{writeup.url}}">  - {{ writeup.title | split:"-" | slice: 1}}</a><br/>
+    {% assign task_name = writeup.title | split:"-" | slice: 1 %}
+    <a href="{{writeup.url}}">  - {{task_name}}</a>
+    (<a href="/assets/pwnablekr/cipher/hackers_secret/{{ writeup.file_path }}.tar.gz.gpg">solution</a>)<br/>
     {% endif %}
 {% endfor %}
 </p>

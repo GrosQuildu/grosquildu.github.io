@@ -1,6 +1,7 @@
 ---
 layout: page
 title: pwnable.kr - combabo calculator
+file_path: combabo_calculator
 category: pwnablekr
 subcategory: hackers_secret
 tags: [writeup, pwn, pwnablekr]

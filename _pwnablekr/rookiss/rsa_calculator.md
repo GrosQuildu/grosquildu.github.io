@@ -1,8 +1,9 @@
 ---
 layout: page
 title: pwnable.kr - rsa calculator
+file_path: rsa_calculator
 category: pwnablekr
-subcategory: rookiess
+subcategory: rookiss
 tags: [writeup, pwn, pwnablekr]
 ---
 
