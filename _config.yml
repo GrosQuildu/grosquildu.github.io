@@ -3,7 +3,7 @@ markdown:            kramdown
 highlighter:         rouge
 
 # Gems (for Jekyll 3.0)
-plugins: [jekyll-paginate]
+plugins: [jekyll-paginate, jekyll-feed]
 
 # Permalinks
 #
