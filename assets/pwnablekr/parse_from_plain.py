@@ -23,7 +23,7 @@ master_passphrase = getpass('Master passphrase: ')
 
 WORK_DIR = '/home/gros/Informatics/hax/blog/blog/'
 FLAGS = path.join(WORK_DIR, 'assets/pwnablekr/plain/flags.json')
-CUT_STRING = '(--CUT-HERE--)'
+CUT_STRING = b'(--CUT-HERE--)'
 
 ENC_CMD = "tar -C {indir} -Pcz {infile} | gpg --symmetric --batch --yes --passphrase {passphrase} -o {outfile}"
 
