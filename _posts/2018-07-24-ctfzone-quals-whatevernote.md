@@ -2,7 +2,7 @@
 layout: post
 title: CTFZone quals 2018 - WhateverNote
 category: writeups
-tags: [crypto, writeup, ctf]
+tags: [crypto]
 ---
 
 tldr; BREACH attack on TLS1.2 with AES GCM (HTTP level compression)

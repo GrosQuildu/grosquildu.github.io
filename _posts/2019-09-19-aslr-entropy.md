@@ -1,8 +1,8 @@
 ---
 layout: post
 title: ASLR entropy
-category: exp
-tags: [exp]
+category: exploitation
+tags: [pwn]
 use_math: false
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: PlaidCTF 2019 - Horst
 category: writeups
-tags: [crypto, writeup, ctf]
+tags: [crypto]
 use_math: true
 ---
 

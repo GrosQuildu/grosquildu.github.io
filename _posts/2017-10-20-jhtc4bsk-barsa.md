@@ -2,7 +2,7 @@
 layout: post
 title: JHtC4BSK barsa
 category: writeups
-tags: [writeup, crypto, jhtc]
+tags: [crypto]
 ---
 
 Crypto ctf challenge for JHtC team.

@@ -2,7 +2,7 @@
 layout: post
 title: Teaser CONFidence CTF 2019  - Really Suspicious Acronym
 category: writeups
-tags: [crypto, writeup, ctf]
+tags: [crypto]
 use_math: true
 ---
 

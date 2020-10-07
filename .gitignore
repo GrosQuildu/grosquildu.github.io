@@ -2,3 +2,4 @@ _site
 .sass-cache
 .jekyll-metadata
 assets/pwnablekr/plain
+assets/posts/2020-10-07-cryptopals/cryptopals.tar.gz

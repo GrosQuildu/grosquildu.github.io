@@ -2,7 +2,7 @@
 layout: post
 title: Nullcon 2019 - Singular
 category: writeups
-tags: [crypto, writeup, ctf]
+tags: [crypto]
 use_math: true
 ---
 

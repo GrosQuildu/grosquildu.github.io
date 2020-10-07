@@ -1,7 +1,7 @@
 ---
 layout: post
 title: pwn2win 2019 - matRoSkA
-category: crypto
+category: writeups
 tags: [crypto]
 use_math: true
 ---

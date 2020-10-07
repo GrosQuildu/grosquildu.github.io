@@ -2,7 +2,7 @@
 layout: post
 title: Insomni'hack 2019
 category: writeups
-tags: [writeup, crypto, web, jhtc]
+tags: [crypto, web]
 ---
 
 [PHPPrivate](#phpprivate) tldr; invalid prepare SQL function
